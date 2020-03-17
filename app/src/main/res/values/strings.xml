@@ -8,4 +8,5 @@
     <string name="post_add">Add Post</string>
     <string name="user_sign_out">Sign Out</string>
     <string name="comment">Comment</string>
+    <string name="error_fill_blanks">Please, Check your credentials.</string>
 </resources>

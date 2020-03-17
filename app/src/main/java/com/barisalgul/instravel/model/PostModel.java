@@ -1,6 +1,5 @@
 package com.barisalgul.instravel.model;
 
-
 import com.google.firebase.Timestamp;
 
 public class PostModel {

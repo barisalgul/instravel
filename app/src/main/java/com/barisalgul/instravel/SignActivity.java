@@ -54,6 +54,11 @@ public class SignActivity extends AppCompatActivity {
         userName = tvUsername.getText().toString().trim();
         userPassword = tvPassword.getText().toString().trim();
 
+        if(userName.isEmpty() || userPassword.isEmpty()){
+            Toast.makeText(SignActivity.this, getString(R.string.error_fill_blanks), Toast.LENGTH_SHORT).show();
+            return;
+        }
+
         firebaseAuth.createUserWithEmailAndPassword(userName, userPassword).addOnSuccessListener(new OnSuccessListener<AuthResult>() {
             @Override
             public void onSuccess(AuthResult authResult) {
@@ -77,6 +82,11 @@ public class SignActivity extends AppCompatActivity {
         userName = tvUsername.getText().toString().trim();
         userPassword = tvPassword.getText().toString().trim();
 
+        if(userName.isEmpty() || userPassword.isEmpty()){
+            Toast.makeText(SignActivity.this, getString(R.string.error_fill_blanks), Toast.LENGTH_SHORT).show();
+            return;
+        }
+
         firebaseAuth.signInWithEmailAndPassword(userName, userPassword).addOnSuccessListener(new OnSuccessListener<AuthResult>() {
             @Override
             public void onSuccess(AuthResult authResult) {
@@ -97,5 +107,6 @@ public class SignActivity extends AppCompatActivity {
     }
 
     public void forgotPassword(View view) {
+        //TODO
     }
 }

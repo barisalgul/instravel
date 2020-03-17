@@ -20,6 +20,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="@string/user_email"
+            style="@style/AppTextStyle"
             android:inputType="textEmailAddress"
             android:maxLength="50" />
 
@@ -28,6 +29,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="50dp"
+            style="@style/AppTextStyle"
             android:hint="@string/user_password"
             android:inputType="textPassword"
             android:maxLength="16" />
@@ -46,7 +48,7 @@
                 android:minHeight="50dp"
                 android:onClick="signin"
                 android:text="@string/sign_in"
-                android:textAllCaps="false" />
+                style="@style/SignTextStyle" />
 
             <Button
                 android:layout_width="wrap_content"
@@ -55,8 +57,8 @@
                 android:minWidth="100dp"
                 android:minHeight="50dp"
                 android:onClick="signup"
-                android:text="@string/sign_up"
-                android:textAllCaps="false" />
+                style="@style/SignTextStyle"
+                android:text="@string/sign_up" />
 
         </LinearLayout>
 
@@ -64,9 +66,9 @@
             android:layout_marginTop="50dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textStyle="bold"
-            android:textAllCaps="false"
             android:text="@string/user_forgot_password"
+            style="@style/AppTextStyle"
+            android:textSize="16sp"
             android:onClick="forgotPassword"/>
 
     </LinearLayout>

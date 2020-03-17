@@ -3,6 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    android:minHeight="300dp"
     android:orientation="vertical"
     android:padding="16dp">
 
@@ -10,12 +11,15 @@
         android:id="@+id/tv_item_useremail"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        style="@style/AppTextStyle"
         android:text="@string/user_email" />
 
     <ImageView
         android:id="@+id/iv_item_photo"
-        android:layout_width="250dp"
-        android:layout_height="180dp"
+        android:layout_width="match_parent"
+        android:scaleType="fitCenter"
+        android:layout_height="match_parent"
+        android:minHeight="250dp"
         android:layout_gravity="center"
         android:paddingTop="16dp"
         app:srcCompat="@drawable/ic_launcher_background" />
@@ -25,5 +29,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:paddingTop="16dp"
+        style="@style/AppTextStyle"
         android:text="@string/comment" />
 </LinearLayout>
