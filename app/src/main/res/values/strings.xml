@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Instravel</string>
+    <string name="user_email">E-Mail</string>
+    <string name="user_password">Password</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="sign_in">Sign In</string>
+    <string name="user_forgot_password">Forgot Password ?</string>
+    <string name="post_add">Add Post</string>
+    <string name="user_sign_out">Sign Out</string>
+    <string name="comment">Comment</string>
+</resources>
